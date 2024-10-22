@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    float: left;
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+}
+.GameOver{
+    font-size: 150px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#Recomecar{
+    margin-left: 15%;
+    width: 400px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#TelaInicial{
+    margin-left:5%;
+    font-family: 'Courier New', Courier, monospace; 
+}
