@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.Fundo{
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(https://i.pinimg.com/originals/b3/1d/0c/b31d0c768f155fc8d2396df445284280.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    background-size: cover;
+    
+}
+.Titulo{
+    font-size: 100px;
+    text-align: center;
+    color: black;
+}
+.Play1{
+    font-size: 70px;
+    margin-top: 130px;
+    color: black;
+    height: 80px;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-left: 420px;
+}
+.a32{
+    color:black;
+    text-decoration: none;
+    text-decoration: dotted;
+    text-align: center;
+}
+#p54{
+    text-align: right;
+    margin-top: 192px;
+}
