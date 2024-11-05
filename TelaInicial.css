@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: wheat;
 }
 header{
     text-align: center;
@@ -13,20 +13,8 @@ section{
     margin-left: 30px;
 }
 #Quimica{
-    background-color: rgb(3, 0, 151);
-    height: 310px;
-    width: 300px;
-    border-radius: 50px;
-    box-shadow: 10px 10px 80px 25px yellow;
-    background-image: url(./SorGabrielQuimica-v.02.gif);
-    background-repeat: no-repeat;
-    background-size: 200px;
-    background-position:bottom
-
-}
-#Quimica p{
-    width: 170px;
-    height: 40px;
+    width: 20%;
+    height: 400px;
     background-color: rgb(3, 0, 151);
     border-radius: 20px;
     text-decoration: none;
@@ -34,18 +22,42 @@ section{
     margin-left: 60px;
     margin-top: 50px;
     color: yellow;
+    box-shadow: 10px 10px 80px 25px yellow;
+    background-image: url(./SorGabrielQuimica-v.02.gif);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position:bottom
+    
 }
 #Fisica{
+    width: 20%;
+    height: 400px;
     background-color: rgb(3, 0, 151);
-    height: 500px;
-    width: 300px;
-    border-radius: 60px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 60px;
+    margin-top: 50px;
+    color: yellow;
     box-shadow: 10px 10px 80px 25px yellow;
+    background-image: url(./SorGabrielQuimica-v.02.gif);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position:bottom
 }
 #Biologia{
+    width: 20%;
+    height: 400px;
     background-color: rgb(3, 0, 151);
-    height: 500px;
-    width: 300px;
-    border-radius: 60px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 60px;
+    margin-top: 50px;
+    color: yellow;
     box-shadow: 10px 10px 80px 25px yellow;
+    background-image: url(./SorGabrielQuimica-v.02.gif);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position:bottom
 }
