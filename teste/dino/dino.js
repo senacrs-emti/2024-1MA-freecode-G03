@@ -40,8 +40,8 @@ function jump() {
 
 function createCactus() {
   const cactus = document.createElement('div');
-  let cactusPosition = 1000;
-  let randomTime = Math.random() * 7000;
+  let cactusPosition = 1290;
+  let randomTime = Math.random() * 6000;
 
   if (isGameOver) return;
 
@@ -58,7 +58,7 @@ function createCactus() {
       // Game over
       clearInterval(leftTimer);
       isGameOver = true;
-      document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
+      document.getElementById('question').innerHTML = "Qual a organela que fornece oxigênio para a célula?"
     } else {
       cactusPosition -= 10;
       cactus.style.left = cactusPosition + 'px';
