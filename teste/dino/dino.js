@@ -1,72 +1,52 @@
-const dino = document.querySelector('.dino');
-const background = document.querySelector('.background');
-
-let isJumping = false;
-let isGameOver = false;
-let position = 0;
-
-function handleKeyUp(event) {
-  if (event.keyCode === 32) {
-    if (!isJumping) {
-      jump();
-    }
-  }
-}
-
-function jump() {
+function jumpi() {
   isJumping = true;
-
   let upInterval = setInterval(() => {
     if (position >= 150) {
-      // Descendo
       clearInterval(upInterval);
-
       let downInterval = setInterval(() => {
         if (position <= 0) {
           clearInterval(downInterval);
           isJumping = false;
         } else {
           position -= 10;
-          dino.style.bottom = position + 'px';
+          block.style.bottom = position + 'px';
         }
       }, 20);
     } else {
-      // Subindo
       position += 10;
-      dino.style.bottom = position + 'px';
+      block.style.bottom = position + 'px';
     }
   }, 20);
 }
-
-function createCactus() {
-  const cactus = document.createElement('div');
-  let cactusPosition = 1290;
-  let randomTime = Math.random() * 6000;
-
-  if (isGameOver) return;
-
-  cactus.classList.add('cactus');
-  background.appendChild(cactus);
-  cactus.style.left = cactusPosition + 'px';
-
-  let leftTimer = setInterval(() => {
-    if (cactusPosition < -60) {
-      // Saiu da tela
-      clearInterval(leftTimer);
-      background.removeChild(cactus);
-    } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
-      // Game over
-      clearInterval(leftTimer);
-      isGameOver = true;
-      document.getElementById('question').innerHTML = "Qual a organela que fornece oxigênio para a célula?"
-    } else {
-      cactusPosition -= 10;
-      cactus.style.left = cactusPosition + 'px';
+function handleKeyUp(event) {
+  if (event.keyCode === 32) {
+    if (!isJumping) {
+      jumpi();
     }
-  }, 20);
+  }
+}
+var character = document.getElementById("character")
+var block = document.getElementById ("block")
+function jump() {
 
-  setTimeout(createCactus, randomTime);
+    if(character.classList !="animate"){
+      character.classList.add("animate")
+    };
+    setTimeout(function(){
+        character.classList.remove("animate");
+    },500);
 }
 
-createCactus();
-document.addEventListener('keypress', handleKeyUp);
+var checkDead = setInterval(function(){
+  var characterTop = 
+      parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+  var blockleft = 
+      parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+      if(blockleft<20 && blockleft>0 && characterTop>=130){
+        block.style.animation = "none";
+        block.style.display = "none";
+        alert("u lose.");
+      }
+},10); 
+
+let randomTime = Math.random() * 6000;
