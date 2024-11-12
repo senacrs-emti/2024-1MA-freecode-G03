@@ -1,52 +1,42 @@
-function jumpi() {
-  isJumping = true;
-  let upInterval = setInterval(() => {
-    if (position >= 150) {
-      clearInterval(upInterval);
-      let downInterval = setInterval(() => {
-        if (position <= 0) {
-          clearInterval(downInterval);
-          isJumping = false;
-        } else {
-          position -= 10;
-          block.style.bottom = position + 'px';
-        }
-      }, 20);
-    } else {
-      position += 10;
-      block.style.bottom = position + 'px';
-    }
-  }, 20);
-}
-function handleKeyUp(event) {
-  if (event.keyCode === 32) {
-    if (!isJumping) {
-      jumpi();
-    }
-  }
-}
-var character = document.getElementById("character")
-var block = document.getElementById ("block")
+const dino = document.querySelector('.dino');
+const cacto = document.querySelector('.cacto')
+
+let alredyJump = false;
+
+document.addEventListener("keydown", (e) => {
+	if((e.code === "ArrowUp")    |  (e.code === "Space")){
+		jump();
+	}
+});
+
 function jump() {
+	if (!dino.classList.contains("jump")) {
+		dino.classList.add("jump");
+		alredyJump = true;
 
-    if(character.classList !="animate"){
-      character.classList.add("animate")
-    };
-    setTimeout(function(){
-        character.classList.remove("animate");
-    },500);
+		setTimeout(() => {
+			dino.classList.remove("jump")
+			alredyJump = false;
+		}, 1100);
+	};
+};
+
+setInterval (() => {
+	let dinoBottom = parseInt(
+		window.getComputedStyle(dino).getPropertyValue("bottom")
+	);
+	let cactoLeft = parseInt(
+		window.getComputedStyle(cacto).getPropertyValue("left")
+	);
+
+	if(cactoLeft > 20 && cactoLeft < 61  && dinoBottom <= 20 && !alredyJump) {
+		alert('Game Over')
+	}
+})
+
+let randomTime = Math.random() * 4000;
+function gerar() {
+  var block = 
+    document.getPropertyValue(randomTime)
+    
 }
-
-var checkDead = setInterval(function(){
-  var characterTop = 
-      parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-  var blockleft = 
-      parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-      if(blockleft<20 && blockleft>0 && characterTop>=130){
-        block.style.animation = "none";
-        block.style.display = "none";
-        alert("u lose.");
-      }
-},10); 
-
-let randomTime = Math.random() * 6000;

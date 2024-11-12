@@ -2,43 +2,46 @@ body{
     background-color: #fafafa;
 }
 #game{
-    width: 500px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
     border: 1px solid black;
+    position: relative;
+    overflow: hidden;
 }
-#character{
+.dino{
     width: 30px;
     height: 50px;
     background-color: blue;     
-    position: relative;
-    top: 149px;
-    left: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
     border: 1px solid black;
+    transform: scaleX(-1);
    
 }
-.animate {
-    animation:  jump 500ms;
+.jump {
+    animation: jump 1.1s linear;
 }
 
-#block{
+.cacto{
     background-color: red;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    top: 127px;
-    left: 479px;
+    position: absolute;
+    width: 30px;    
+    height: 30px;
+    bottom: 0;
     border: 1px solid black;
-    animation: block 1s infinite linear;
+    animation: cacto 2s infinite linear;
 }
-@keyframes block{
-    0%{left:480px;}
-    100%{left:-40px;}
+@keyframes cacto {
+    0%{right: -20px;}
+    100%{right: 840px;}
 }
 @keyframes jump {
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100% {top: 150px;}
+    0%{bottom: 0;}
+    30%{bottom: 70px;}
+    50%{bottom: 90px;}
+    80% {bottom: 70px;}
+    100%{bottom: 0;}
 }
 
 .game-over{
