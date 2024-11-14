@@ -1,16 +1,20 @@
 const dino = document.querySelector('.dino');
 const background = document.querySelector('.background');
 
-let alredyJump = false;
 let isGameOver = false;
 let position = 0;
 
 document.addEventListener("keydown", (e) => {
-	if((e.code === "ArrowUp")    |  (e.code === "Space")){
+	if((e.code === "ArrowUp")    |  (e.code === "KeyW")){
 		jump();
 	}
 });
 
+document.addEventListener("keydown", (e) => {
+	if((e.code === "ArrowDown")   |  (e.code === "KeyS")){
+		reduce();
+	}    
+});
 function jump() {
 	isJumping = true;
   
@@ -34,12 +38,18 @@ function jump() {
 		dino.style.bottom = position + 'px';
 	  }
 	}, 28);
-  }
+  };
 
 function createCactus() {
 	const cactus = document.createElement('div');
 	let cactusPosition = 1000;
-	let randomTime = Math.random() * 7000;
+	let randomTime = Math.random() * 4000;
+
+	if (randomTime < 1000) {
+		let cactusPosition = 1200;
+	} else {
+		let cactusPosition = 1000;
+	}
   
 	if (isGameOver) return;
   
@@ -55,8 +65,8 @@ function createCactus() {
 	  } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
 		// Game over
 		clearInterval(leftTimer);
+		isJumping = false;
 		isGameOver = true;
-		document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
 	  } else {
 		cactusPosition -= 10;
 		cactus.style.left = cactusPosition + 'px';
