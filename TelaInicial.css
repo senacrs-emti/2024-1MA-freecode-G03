@@ -1,12 +1,91 @@
 .body39{
 background: local;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');                                                        
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:200px;
+    min-height: 56px;
+    font-family: calibri;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 100px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn-primary {
+    background-color: #dc3545;
+    color: #fff;
+    width: 700px;
+    height: 200px;
+    top: 40px;
+}
+
+.btn-primary:hover {
+    background-color: #bb2d3b;
+}
+
+.btn-primary:active {
+    box-shadow: 0 0 0 0.25rem rgba(49,132,253,.5);
+}
+
+span {
+    font-size: 40px;
+    padding: 0 10px;
+    position: absolute;
+    left: 1em;
+    transition: all 1s ease;
+}
+
+[name="remove-outline"] {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 3em;
+    left: 2em;
+    right: 40px;
+    color: #941e2a;
+     transition: all 500ms ease;
+}
+
+[name="close"] {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 2em;
+    top: 12px;
+    right: 40px;
+    color: #fff;
+    transition: all 500ms ease;
+}
+
+.btn:hover [name="close"] {
+    transform: translateX(-60px);
+}
+
+.btn:hover [name="remove-outline"],  
+.btn:hover span{
+    transform: translateX(-6000px);
+}
+.remove{
+    position: relative;
+    left: 100px;
+
+}
+
 #myVideo {
     position:fixed ;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+
 }
 .content {
     position: fixed;
@@ -16,48 +95,31 @@ background: local;
     width: 100%;
     padding: 20px;
 }
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
 
 
 header{
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: relative;
+    bottom: 20px;
+    appearance: no-repeat;
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
     height: 100px;
     width: 100%;
-    color: rgba(3, 3, 145, 0.74);
 }
 section{
     float: left;
     margin-left: 30px;
 }
+a{
+    position: relative;
+}
 #Quimica{
-    
-    width: 20%;
-    height: 400px;
-    background-color: rgb(3, 0, 151);
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 30px;
-    margin-left: 60px;
-    margin-top: 50px;
-    color: yellow;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: 200px;
-    background-position:bottom
 }
 #Fisica{
     
