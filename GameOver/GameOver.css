@@ -22,6 +22,7 @@
       "SHLN" 50;
 }
 #Recomecar{
+    margin-top: 150px;
     margin-left: 15%;
     width: 400px;
     font-family: "Honk", system-ui;
@@ -50,6 +51,7 @@
     background-color:black;
 }
 #TelaInicial{
+    margin-top: 150px;
     margin-left:5%;
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
@@ -75,3 +77,36 @@
     padding-top: 5px;
     background-color: black;
 }
+
+.ml16 .word3 {
+  margin-left: 28.7%;
+  display: inline-block;
+  line-height: 1em;
+  font-size: 150px;
+  text-align: center;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+.ml16 .word4 {
+  margin-left: 2%;
+  display: inline-block;
+  line-height: 1em;
+  font-size: 150px;
+  text-align: center;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+.word4{
+  opacity: 0%;
+}
+
