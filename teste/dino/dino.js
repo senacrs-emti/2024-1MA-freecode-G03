@@ -40,6 +40,14 @@ function jump() {
 	}, 28);
   };
 
+  function reduce() {
+	dino.classList.add ("dinobaixo")
+	setTimeout(function() {
+		dino.classList.remove("dinobaixo")
+	},500);
+};
+
+
 function createCactus() {
 	const cactus = document.createElement('div');
 	let cactusPosition = 1000;
