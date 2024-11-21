@@ -11,7 +11,7 @@
     text-align: center;
 }
 .GameOver{
-    font-size: 150px;
+    font-size: 10px;
     text-align: center;
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
@@ -93,7 +93,7 @@
     "SHLN" 50;
 }
 .ml16 .word4 {
-  margin-left: 2%;
+  margin-left: 1%;
   display: inline-block;
   line-height: 1em;
   font-size: 150px;
