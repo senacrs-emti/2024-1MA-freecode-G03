@@ -1,5 +1,6 @@
 const dino = document.querySelector('.dino');
 const background = document.querySelector('.background');
+const pergunta = document.querySelector('.question')
 
 let isGameOver = false;
 let position = 0;
@@ -44,21 +45,15 @@ function jump() {
 	dino.classList.add ("dinobaixo")
 	setTimeout(function() {
 		dino.classList.remove("dinobaixo")
-	},500);
+	},1000);
 };
 
 
 function createCactus() {
 	const cactus = document.createElement('div');
 	let cactusPosition = 1000;
-	let randomTime = Math.random() * 4000;
+	let randomTime = Math.floor((Math.random() * 4000) + 1000);
 
-	if (randomTime < 1000) {
-		let cactusPosition = 1200;
-	} else {
-		let cactusPosition = 1000;
-	}
-  
 	if (isGameOver) return;
   
 	cactus.classList.add('cactus');

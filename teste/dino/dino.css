@@ -2,8 +2,10 @@ body{
     background-color: #fafafa;
 }
 .background{
-    width: 1350px;
-    height: 625px;
+    margin-top: 10%;
+    margin-left: 12%;
+    width: 1000px;
+    height: 279px;
     border: 1px solid black;
     position: relative;
     overflow: hidden;
@@ -60,6 +62,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #question{
+    height: 200px;
+    width: 200px;
+}
+.question {
     height: 200px;
     width: 200px;
 }
