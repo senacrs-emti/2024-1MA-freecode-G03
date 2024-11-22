@@ -10,15 +10,14 @@ document.addEventListener("keydown", (e) => {
 		jump();
 	}
 });
-
 document.addEventListener("keydown", (e) => {
 	if((e.code === "ArrowDown")   |  (e.code === "KeyS")){
 		reduce();
 	}    
 });
+
 function jump() {
 	isJumping = true;
-  
 	let upInterval = setInterval(() => {
 	  if (position >= 130) {
 		// Descendo
@@ -52,7 +51,7 @@ function jump() {
 function createCactus() {
 	const cactus = document.createElement('div');
 	let cactusPosition = 1000;
-	let randomTime = Math.floor((Math.random() * 4000) + 1000);
+	let randomTime = Math.floor((Math.random() * 2000) + 100);
 
 	if (isGameOver) return;
   
