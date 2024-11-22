@@ -42,7 +42,7 @@ function jump() {
   };
 
   function reduce() {
-	dino.classList.add ("dinobaixo")
+	dino.classList.add("dinobaixo")
 	setTimeout(function() {
 		dino.classList.remove("dinobaixo")
 	},1000);

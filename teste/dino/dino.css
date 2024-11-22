@@ -4,11 +4,24 @@ body{
 .background{
     margin-top: 10%;
     margin-left: 12%;
-    width: 1000px;
+    width: 900px;
     height: 279px;
     border: 1px solid black;
+    display: grid;
+    grid-template-columns: 3(33.3%);
+    grid-template-rows: 3(33.3%);
+    grid-template-areas: 'acima acima acima'
+    'meio meio meio'
+    'baixo baixo baixo';
     position: relative;
     overflow: hidden;
+}
+.chao{
+    background-image: url(img-dino/chão\ padrão.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    grid-area: baixo;
 }
 .dino{
     width: 50px;
