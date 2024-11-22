@@ -17,3 +17,15 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+var timer, sound;
+sound = new Howl({
+    src: ['MusicaTelaPlay.mp3'],
+    autoplay: true,
+    loop: true,
+    volume: 1,
+});
+setTimeout(function(){
+    sound.play();
+    },100);
