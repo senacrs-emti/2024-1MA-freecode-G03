@@ -1,8 +1,5 @@
-
-// Wrap every letter in a span
 var textWrapper = document.querySelector('.ml9 .Letras');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='Letras'>$&</span>");
-
 anime.timeline({loop: true})
   .add({
     targets: '.ml9 .Letras',
@@ -16,14 +13,14 @@ anime.timeline({loop: true})
     duration: 1000,
     easing: "easeOutExpo",
     delay: 1000
-  });
+});
 
 
 var timer, sound;
 sound = new Howl({
     src: ['MusicaTelaPlay.mp3'],
     autoplay: true,
-    loop: true,
+    loop: false,
     volume: 1,
 });
 setTimeout(function(){
