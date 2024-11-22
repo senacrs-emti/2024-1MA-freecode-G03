@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .Fundo{
-    background-image: url(https://i.pinimg.com/originals/b3/1d/0c/b31d0c768f155fc8d2396df445284280.gif);
+    background-image: url(FundoTelaPlay.gif);
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100%;
@@ -12,9 +12,10 @@
     font-size: 140px;
     text-align: center;
     color: black;
-    margin-top: 300px;
+    margin-top: 150px;
     font-family: "Honk", system-ui;   font-optical-sizing: auto;   font-weight: 600;   font-style: normal;   font-variation-settings:     "MORF" 15,     "SHLN" 50; 
     font-size: 130px;
+    
 }
 .Play1{
     font-size: 90px;
@@ -23,7 +24,7 @@
     border-radius: 20px;
     padding-top: 15px;
     padding-left: 20px;
-    margin-left: 30px;
+    margin-left: -60px;
     margin-top: -30px;
     font-family: "Honk", system-ui;   font-optical-sizing: auto;   font-weight: 600;   font-style: normal;   font-variation-settings:     "MORF" 15,     "SHLN" 50; 
     font-size: 90px;
@@ -35,10 +36,38 @@
     text-decoration: dotted;
     text-align: center;
     height: 100px;
+    text-align: center;
+    
 }
 #p54{
     text-align: right;
     margin-top: 10px;
+    font-family: "Honk", system-ui;   font-optical-sizing: auto;   font-weight: 600;   font-style: normal;   font-variation-settings:     "MORF" 15,     "SHLN" 50; 
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
+.ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+    margin-left: 90px;
+}
   
+  .ml9 .Titulo {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+  .ml9 .Letras {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 4px;
+}
+
+
