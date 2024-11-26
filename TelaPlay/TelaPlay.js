@@ -5,12 +5,12 @@ anime.timeline({loop: true})
     targets: '.ml9 .Letras',
     scale: [0, 1],
     duration: 2500,
-    elasticity: 600,
+    elasticity: 800,
     delay: (el, i) => 45 * (i+1)
   }).add({
     targets: '.ml9',
     opacity: 0,
-    duration: 1000,
+    duration: 2000,
     easing: "easeOutExpo",
     delay: 1000
 });
@@ -18,7 +18,7 @@ anime.timeline({loop: true})
 
 var timer, sound;
 sound = new Howl({
-    src: ['MusicaTelaPlay.mp3'],
+    src: ['MMM.mp3'],
     autoplay: true,
     loop: false,
     volume: 1,
