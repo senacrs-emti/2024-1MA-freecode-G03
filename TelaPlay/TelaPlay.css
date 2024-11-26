@@ -47,14 +47,14 @@
     margin-bottom: 10px;
 }
 
-.ml9 {
+.ml1 {
     position: relative;
     font-weight: 200;
     font-size: 4em;
     margin-left: 90px;
 }
   
-  .ml9 .Titulo {
+  .ml1 .Titulo {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
@@ -63,11 +63,10 @@
     overflow: hidden;
 }
   
-  .ml9 .Letras {
+  .ml1 .Letras {
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
     margin-left: 4px;
 }
-
 
