@@ -1,5 +1,6 @@
 .body39{
 background: local;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');                                                        
@@ -25,12 +26,13 @@ background: local;
     width: 350px;
     height: 200px;
     top: 40px;
+    left: 100px;
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
 .btn-primary:hover {
-   transform:perspective(-300px) ;
+   background-color: #3D8BBC;
 }
 
 .btn-primary:active {
@@ -61,7 +63,7 @@ span{
     left: 5px;
     color: #000000;
     transition: all 500ms ease;
-    transform: translateX(-600px);
+    transform: translateX(-1300px);
 }   
 
 [name="close"] {
@@ -75,7 +77,7 @@ span{
 }
 
 .btn:hover span{
-    transform: translateX(-300px);
+    transform: translateX(-950px);
 }
 .btn:hover [name="close"] {
     transform: translateY(50px);
@@ -83,7 +85,7 @@ span{
 }
 
 .btn:hover [name="remove-outline"]{
-    transform: translateX(-35px);
+    transform: translateX(-40px);
 }
 
 .remove{
@@ -133,4 +135,15 @@ section{
 }
 a{
     position: relative;
+}
+
+#Adalberto{
+    position: relative;
+    left: 380px;
+    bottom: 220px;
+}
+#Brenda{
+    position: relative;
+    left: 760px;
+    bottom: 438px;
 }
