@@ -6,9 +6,10 @@ let isGameOver = false;
 let position = 0;
 
 document.addEventListener("keydown", (e) => {
-	if((e.code === "ArrowUp")    |  (e.code === "KeyW")){
+	if((e.code === "ArrowUp")    |  (e.code === "KeyW") ){
 		jump();
 	}
+	
 });
 
 document.addEventListener("keydown", (e) => {
@@ -17,8 +18,7 @@ document.addEventListener("keydown", (e) => {
 	}    
 });
 function jump() {
-	isJumping = true;
-  
+
 	let upInterval = setInterval(() => {
 	  if (position >= 130) {
 		// Descendo
@@ -37,8 +37,10 @@ function jump() {
 		// Subindo
 		position += 10;
 		dino.style.bottom = position + 'px';
+		document.getElementById('character').classList.add('.jump')
 	  }
 	}, 28);
+	document.getElementById('character').classList.remove('.jump');
   };
 
   function reduce() {
