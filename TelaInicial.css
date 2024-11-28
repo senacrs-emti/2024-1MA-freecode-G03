@@ -1,7 +1,3 @@
-.body39{
-background: local;
-overflow:-moz-hidden-unscrollable;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');                                                        
 
@@ -25,7 +21,6 @@ overflow:-moz-hidden-unscrollable;
     color: #050505;
     width: 350px;
     height: 200px;
-    top: 40px;
     left: 100px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -39,6 +34,8 @@ overflow:-moz-hidden-unscrollable;
 
 .btn-primary:active {
  background-color: blue;
+ transform: scale(0.75);
+ transition: 1s;
 }
 
 span{
@@ -131,6 +128,11 @@ header{
     font-size: 100px;
     height: 100px;
     width: 100%;
+}
+main{
+    overflow:-moz-hidden-unscrollable;
+    width: 1300px;
+    height:700px;
 }
 section{
     float: left;
