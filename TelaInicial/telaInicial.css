@@ -126,8 +126,9 @@ header{
     appearance: no-repeat;
     text-align: center;
     font-size: 100px;
-    height: 100px;
+    height: 120px;
     width: 100%;
+    margin-left: 20px;
 }
 main{
     overflow:-moz-hidden-unscrollable;
@@ -142,6 +143,7 @@ a{
     position: relative;
 }
 div{
+    margin-left: -100px;
     width: 0px;
 }
 
@@ -154,10 +156,13 @@ div{
     position:relative;
     left: 760px;
     bottom: 437px;
+
 }
 #Bruno{
     position: relative;
     bottom: 430px;
+
+
 }
 #Barbara{
     position: relative;
