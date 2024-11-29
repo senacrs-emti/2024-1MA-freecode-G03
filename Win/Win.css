@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');          
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    float: left;
+  width: 400px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+}
+.Win{
+  font-size: 150px;
+  text-align: center;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+#NextLevel{
+  margin-top: 150px;
+  margin-left: 15%;
+  width: 400px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    background-color: whitesmoke;
+}
+#NextLevel:hover{
+  margin-left: 15%;
+  width: 43 0px;
+  height: 70px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    transition: 0.3s;
+    text-align: center;
+    padding-top: 5px;
+    background-color:black;
+}
+#TelaInicial1{
+  margin-top: 150px;
+  margin-left: 5%;
+  width: 400px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    background-color: whitesmoke;
+}
+#TelaInicial1:hover{
+  width: 43 0px;
+  height: 70px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    transition: 0.3s;
+    text-align: center;
+    padding-top: 5px;
+    background-color:black;
+}
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1,5em;
+}
+
+.ml15 .word1 {
+  margin-left: 28.7%;
+  display: inline-block;
+  line-height: 1em;
+  font-size: 150px;
+  text-align: center;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+.ml15 .word2 {
+  margin-left: 2%;
+  display: inline-block;
+  line-height: 1em;
+  font-size: 150px;
+  text-align: center;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+.word2{
+  opacity: 0%;
+}
