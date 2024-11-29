@@ -11,14 +11,18 @@ document.addEventListener("keydown", (e) => {
 	}
 	
 });
-
 document.addEventListener("keydown", (e) => {
 	if((e.code === "ArrowDown")   |  (e.code === "KeyS")){
 		reduce();
 	}    
 });
-function jump() {
 
+function jump() {
+	dino.classList.add("jump")
+	setTimeout(function(){
+		dino.classList.remove("jump")
+	},800)
+	isJumping = true;
 	let upInterval = setInterval(() => {
 	  if (position >= 130) {
 		// Descendo
@@ -37,10 +41,8 @@ function jump() {
 		// Subindo
 		position += 10;
 		dino.style.bottom = position + 'px';
-		document.getElementById('character').classList.add('.jump')
-	  }
+	}
 	}, 28);
-	document.getElementById('character').classList.remove('.jump');
   };
 
   function reduce() {
@@ -54,7 +56,7 @@ function jump() {
 function createCactus() {
 	const cactus = document.createElement('div');
 	let cactusPosition = 1000;
-	let randomTime = Math.floor((Math.random() * 4000) + 1000);
+	let randomTime = Math.floor((Math.random() * 3000) + 100);
 
 	if (isGameOver) return;
   
@@ -67,7 +69,7 @@ function createCactus() {
 		// Saiu da tela
 		clearInterval(leftTimer);
 		background.removeChild(cactus);
-	  } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
+	  } else if (cactusPosition > 0 && cactusPosition < 100 && position < 40) {
 		// Game over
 		clearInterval(leftTimer);
 		isJumping = false;
