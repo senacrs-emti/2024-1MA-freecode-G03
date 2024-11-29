@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    .game-board{
+    width: 100%;
+    height: 500px;
+    
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://preview.redd.it/pjb6cef1wcx71.png?width=600&format=png&auto=webp&s=d0269058c22cefa692902a311e996c117fbc93c9');
+    z-index: -2;
+    background-size: cover; 
+    }
+    
+    .pipe{
+     position: absolute;
+     bottom: 0;
+     width: 80px;
+     animation: pipe-animacao 1.5s infinite linear;
+     
+    }
+    
+    @keyframes pipe-animacao{
+      from{
+       right:-80px;
+      }
+      
+      to{
+       right: 100%;
+      }
+    }
+    
+    .mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    }
+    
+    .pulo{
+    animation: pulo 500ms ease-out;
+    }
+    
+    @keyframes pulo{
+      0%{
+        bottom: 0;
+      }
+    
+      50%{
+       bottom: 180px;
+      }
+       
+       60%{
+       bottom: 180px;
+      }
+    
+       70%{
+       bottom: 180px;
+      }
+       
+       75%{
+       bottom: 180px;
+      }
+    
+       80%{
+       bottom: 180px;
+      }
+       
+      100%{
+       bottom: 0;
+      }
+    
+       
+    }
+    
+    
+    .nuvens{
+    width: 600px;
+    position: absolute;
+    margin-top: 0;
+    animation: nuvens 10s infinite linear;
+    z-index: -1;
+    }
+    
+    .nuvens2{
+     width: 500px;
+    position: absolute;
+    margin-top: 50px;
+    animation: nuvens 7.5s infinite linear;
+    z-index: -1; 
+    
+    }
+    
+    @keyframes nuvens{
+       from{
+       right:-600px;
+      }
+      
+      to{
+       right: 100%;
+      }
+    }
