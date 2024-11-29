@@ -54,13 +54,13 @@ function createCactus() {
 		// Saiu da tela
 		clearInterval(leftTimer);
 		background.removeChild(cactus);
-	  } else if (cactusPosition > 0 && cactusPosition < 100 && position < 40) {
+	  } else if (cactusPosition > 0 && cactusPosition < 70 && position < 60) {
 		// Game over
 		clearInterval(leftTimer);
 		isJumping = false;
 		isGameOver = true;
 	  } else {
-		cactusPosition -= 10;
+		cactusPosition -= 7;
 		cactus.style.left = cactusPosition + 'px';
 	  }
 	}, 20);
