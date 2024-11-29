@@ -16,7 +16,7 @@ body{
     border: 1px solid black;
     position: relative;
     overflow: hidden;
-    background-image: url(img-dino/floresta.png);
+    background-image: url(img-dino/floresta.pg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center ;
@@ -26,7 +26,6 @@ body{
     height: 69.5px;
     position: relative;
     top: 210px;
-    z-index: 1;
 }
 .dino{
     width: 100px;
@@ -36,8 +35,7 @@ body{
     left: 30px; 
     background-image: url(img-dino/Adalberto.gif);
     background-size: contain;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
 }
 .dinobaixo {
     width: 100px;

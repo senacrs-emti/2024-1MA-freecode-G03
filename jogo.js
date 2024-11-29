@@ -11,12 +11,6 @@ document.addEventListener("keydown", (e) => {
 	}
 	
 });
-document.addEventListener("keydown", (e) => {
-	if((e.code === "ArrowDown")   |  (e.code === "KeyS")){
-		reduce();
-	}    
-});
-
 function jump() {
 	dino.classList.add("jump")
 	setTimeout(function(){
@@ -44,15 +38,6 @@ function jump() {
 	}
 	}, 28);
   };
-
-  function reduce() {
-	dino.classList.add("dinobaixo")
-	setTimeout(function() {
-		dino.classList.remove("dinobaixo")
-	},1000);
-};
-
-
 function createCactus() {
 	const cactus = document.createElement('div');
 	let cactusPosition = 1000;
