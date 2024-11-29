@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+body{
+    overflow: visible;
+}
+
 .Fundo{
     background-image: url(FundoTelaPlay.gif);
     background-repeat: no-repeat;
@@ -8,7 +12,7 @@
     background-size: cover;
 }
 .Titulo{
-    margin-left: 70px;
+    margin-left: 80px;
     font-size: 140px;
     text-align: center;
     color: black;
@@ -17,7 +21,7 @@
     font-size: 130px;
     
 }
-.Play1{
+.h404{
     font-size: 90px;
     margin-top: 130px;
     color: black;
@@ -29,6 +33,22 @@
     font-family: "Honk", system-ui;   font-optical-sizing: auto;   font-weight: 600;   font-style: normal;   font-variation-settings:     "MORF" 15,     "SHLN" 50; 
     font-size: 90px;
 
+}
+#Play1{
+    position: relative;
+    left: 570px;
+    width: 100px;
+    height: 20px;
+    border: hidden;
+    background:none;
+}
+.h404:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+.h404:active{
+    transform:scale(2.5)
+  
 }
 .a32{
     color:black;
