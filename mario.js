@@ -1,14 +1,14 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
-const pulo = () => {
+function jump() {
   mario.classList.add('pulo');
 
   setTimeout (() =>{
     mario.classList.remove('pulo');
 
   },500);
-}
+};
 
 
 
@@ -39,5 +39,9 @@ const loop = setInterval(()=>{
    
 },10);
 
-
-document.addEventListener('keydown', pulo);
+document.addEventListener("keydown", (e) => {
+	if((e.code === "ArrowUp")    |  (e.code === "KeyW") ){
+		jump();
+	}
+	
+});

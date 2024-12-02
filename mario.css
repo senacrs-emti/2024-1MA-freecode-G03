@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
     }
+    .chao{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        bottom: -200px;
+        z-index: -1;  
+    }
     
     .game-board{
     width: 100%;
-    height: 500px;
-    
+    height: 641px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -34,13 +40,18 @@
     }
     
     .mario{
-    width: 150px;
+    width: 100px;
+    height: 90px;
     position: absolute;
     bottom: 0;
+    left: 40px;
+    background-image: url(img-dino/Adalberto.gif);
+    background-repeat: no-repeat;
     }
     
     .pulo{
     animation: pulo 500ms ease-out;
+    background-image: url(img-dino/AdalbertoPulo.gif);
     }
     
     @keyframes pulo{
