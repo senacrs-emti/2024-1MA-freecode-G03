@@ -1,3 +1,4 @@
+
 const dino = document.querySelector('.dino');
 const background = document.querySelector('.background');
 const pergunta = document.querySelector('.question')
@@ -59,6 +60,7 @@ function createCactus() {
 		clearInterval(leftTimer);
 		isJumping = false;
 		isGameOver = true;
+		window.location.href = '/GameOver/GameOver.html'
 	  } else {
 		cactusPosition -= 7;
 		cactus.style.left = cactusPosition + 'px';
@@ -69,3 +71,4 @@ function createCactus() {
   }
   
   createCactus();
+

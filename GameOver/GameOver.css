@@ -1,4 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');          
+  .FundoFinal{
+    background-image: url(img-dino/floresta.png);
+  }
   a{
       text-decoration: none;
       color: white;
