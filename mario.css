@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     }
+    body{
+      background-image: url(img-dino/floresta.gif);
+      background-position: 15px -20px;
+    }
     .chao{
         width: 100%;
         height: 300px;
@@ -17,7 +21,6 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background-image: url('https://preview.redd.it/pjb6cef1wcx71.png?width=600&format=png&auto=webp&s=d0269058c22cefa692902a311e996c117fbc93c9');
     z-index: -2;
     background-size: cover; 
     }
@@ -45,9 +48,10 @@
     height: 90px;
     position: absolute;
     bottom: 5px;
-    left: 40px;
+    left: 60px;
     background-image: url(img-dino/Adalberto.gif);
     background-repeat: no-repeat;
+    border: none;
     }
     
     .pulo{
