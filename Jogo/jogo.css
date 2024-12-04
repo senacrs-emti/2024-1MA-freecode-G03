@@ -13,6 +13,7 @@
         bottom: -341px;
         z-index: -1;  
         background-image: url(img-dino/chaofase1.gif);
+        animation: chao-animacao 20s infinite;
     }
     
     .game-board{
@@ -27,10 +28,24 @@
     
     .pipe{
      position: absolute;
-     bottom: 0;
+     bottom: 5px;
+     height: 80px;
      width: 80px;
      animation: pipe-animacao 1.5s infinite linear;
-     
+     background-color: red;
+     border: 1px solid black;
+    }
+
+    @keyframes chao-animacao{
+      0%{
+        right: 0;
+      }
+      50%{
+        right: 100%;
+      }
+      100%{
+        right: 0;
+      }
     }
     
     @keyframes pipe-animacao{
@@ -44,14 +59,13 @@
     }
     
     .mario{
-    width: 100px;
-    height: 90px;
+    width: 110px;
+    height: 150px ;
+    background-color: blue;
     position: absolute;
     bottom: 5px;
     left: 60px;
-    background-image: url(img-dino/Adalberto.gif);
-    background-repeat: no-repeat;
-    border: none;
+    border: 1px solid black
     }
     
     .pulo{

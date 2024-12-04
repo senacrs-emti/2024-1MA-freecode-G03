@@ -26,7 +26,7 @@ const loop = setInterval(()=>{
      mario.style.animation = 'none';
      mario.style.bottom = `${marioPosition}px`;
 
-     mario.style.width = '75px'
+     mario.style.width = '110px'
      mario.style.marginLeft = '0px'
 
      clearInterval(loop);
