@@ -1,6 +1,8 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
+let IsGameOver = false;
+
 function jump() {
   mario.classList.add('pulo');
 
@@ -28,7 +30,11 @@ const loop = setInterval(()=>{
 
      mario.style.width = '160px'
      mario.style.marginLeft = '0px'
+	 IsGameOver = true;
 
+	 if(IsGameOver == true){
+		
+	 }
      clearInterval(loop);
     
    }
