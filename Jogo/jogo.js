@@ -18,15 +18,15 @@ const loop = setInterval(()=>{
   console.log(marioPosition);
 
 
-   if (pipePosition <= 110  && pipePosition > 0 && marioPosition < 80 ){
-      
+   if (pipePosition <= 100  && pipePosition > 5 && marioPosition < 90 ){
+     pipe.style.border = 'none'
      pipe.style.animation = 'none';
      pipe.style.left = `${pipePosition}px`;
 
      mario.style.animation = 'none';
      mario.style.bottom = `${marioPosition}px`;
 
-     mario.style.width = '110px'
+     mario.style.width = '160px'
      mario.style.marginLeft = '0px'
 
      clearInterval(loop);
