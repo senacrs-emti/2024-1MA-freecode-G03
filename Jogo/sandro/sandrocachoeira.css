@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-image: url(img-sandro/cachoeira.gif);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: 0 -55px;
+ }
+ .mario{
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  bottom: 5px;
+  left: 60px;
+  background-image: url(img-sandro/sandro.gif);
+  background-size: cover;
+  box-shadow: none;
+  border: none;
+  }
+  .tampar {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    bottom: 0px;
+    z-index: -4;
+    background-color: rgba(29, 23, 30, 1);
+    background-size: contain;
+    background-position: 0 -115px;
+    background-repeat: repeat;
+  }
+    
+    .game-board{
+    width: 100%;
+    height: 641px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+    background-size: cover; 
+    }
+    
+    .pipe{
+     position: absolute;
+     bottom: 35px;
+     height: 80px;
+     width: 80px;
+     background-image: url(img-sandro/obsandro.gif);
+     background-repeat: no-repeat;
+     background-size: cover;
+     animation: pipe-animacao 1.5s infinite linear;
+     z-index: 1;
+    }
+
+    @keyframes chao-animacao{
+      0%{
+        right: 0;
+      }
+      50%{
+        right: 100%;
+      }
+      100%{
+        right: 0;
+      }
+    }
+    
+    @keyframes pipe-animacao{
+      from{
+       right:-80px;
+      }
+      
+      to{
+       right: 100%;
+      }
+    }  
+    .pulo{
+    animation: pulo 500ms ease-out;
+    background-image: url(img-sandro/sandropulo.gif);
+    }
+    
+    @keyframes pulo{
+      0%{
+        bottom: 0;
+      }
+    
+      50%{
+       bottom: 180px;
+      }
+       
+       60%{
+       bottom: 180px;
+      }
+    
+       70%{
+       bottom: 180px;
+      }
+       
+       75%{
+       bottom: 180px;
+      }
+    
+       80%{
+       bottom: 180px;
+      }
+       
+      100%{
+       bottom: 0;
+      }
+    
+       
+    }
+    
+    
+    .nuvens{
+    width: 600px;
+    position: absolute;
+    margin-top: 50px;
+    animation: nuvens 10s infinite linear;
+    z-index: -1;
+    }
+    
+    .nuvens2{
+     width: 500px;
+    position: absolute;
+    margin-top: 100px;
+    animation: nuvens 7.5s infinite linear;
+    z-index: -1; 
+    
+    }
+    
+    @keyframes nuvens{
+       from{
+       right:-600px;
+      }
+      
+      to{
+       right: 100%;
+      }
+    }
