@@ -13,7 +13,7 @@ body{
   position: absolute;
   bottom: 5px;
   left: 60px;
-  background-image: url(img-dino/Sandro.gif);
+  background-image: url(img-dino/GabrielCosta.gif);
   background-size: cover;
   box-shadow: none;
   border: none;
@@ -88,7 +88,7 @@ body{
     }  
     .pulo{
     animation: pulo 500ms ease-out;
-    background-image: url(img-dino/SandroPulo.gif);
+    background-image: url(img-dino/GabrielCostaPulo.gif);
     }
     
     @keyframes pulo{
