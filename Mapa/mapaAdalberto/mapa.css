@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');          
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); 
+body{
+background: url(../img/FundoTela.mp4);
+}
 .mapa1{
     width: 25%;
     height: 300px;
