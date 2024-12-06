@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+#myVideo {
+    position:fixed ;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 body{
     overflow: visible;
     
@@ -17,12 +25,15 @@ body{
     font-size: 140px;
     text-align: center;
     color: black;
+    position: relative;
+    left: 35px;
     margin-top: 150px;
     font-family: "Honk", system-ui;   font-optical-sizing: auto;   font-weight: 600;   font-style: normal;   font-variation-settings:     "MORF" 15,     "SHLN" 50; 
     font-size: 130px;
     
 }
 .h404{
+    position: relative;
     font-size: 90px;
     margin-top: 130px;
     color: black;
@@ -61,6 +72,8 @@ body{
     
 }
 #p54{
+    position: relative;
+    top: 200px;
     text-align: right;
     margin-top: 10px;
     font-family: "Honk", system-ui;   font-optical-sizing: auto;   font-weight: 600;   font-style: normal;   font-variation-settings:     "MORF" 15,     "SHLN" 50; 

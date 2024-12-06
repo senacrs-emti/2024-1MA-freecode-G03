@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); 
-body{
-background: url(../img/FundoTela.mp4);
+
+#myVideo {
+    position:fixed ;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
 }
 .mapa1{
     width: 25%;
@@ -8,6 +14,7 @@ background: url(../img/FundoTela.mp4);
     margin-left: 80px;
     border-radius: 60px;
     float: left;
+    position: relative;
 }
 .mapa2{
     width: 25%;
@@ -15,12 +22,14 @@ background: url(../img/FundoTela.mp4);
     margin-left: 60px;
     border-radius: 60px;
     float: left;
+    position: relative;
 }
 .mapa3{
     width: 25%;
     height: 300px;
     margin-left:60px;
     border-radius: 60px;
+    position: relative;
 }
 .MapaTitulo{
     text-align: center;
@@ -32,6 +41,7 @@ background: url(../img/FundoTela.mp4);
       "MORF" 15,
       "SHLN" 50;
     font-size: 100px;
+    position: relative;
 }
 .Mapa1:hover{
     transform: scale(1.1);
