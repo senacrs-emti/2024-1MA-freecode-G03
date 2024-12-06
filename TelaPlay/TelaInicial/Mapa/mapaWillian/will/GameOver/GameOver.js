@@ -25,4 +25,6 @@ anime.timeline({loop: false})
         duration: 800,
         delay: (el, i) => 800 * i
       })
-
+      document.getElementById("Recomecar").addEventListener("click", function(){
+        window.location.href = "C:/Users/EDUARDOAVILAPEREIRA/Desktop/2024-1MA-freecode-G03/TelaPlay/TelaPlay.html"
+      });
