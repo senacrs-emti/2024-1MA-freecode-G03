@@ -1,0 +1,114 @@
+body{
+    background-color: #fafafa;
+}
+.background{
+    margin-top: 10%;
+    margin-left: 12%;
+    width: 900px;
+    height: 279px;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: 3(33.3%);
+    grid-template-rows: 4(25%);
+    grid-template-areas: 'acima acima acima'
+    'meio meio meio'
+    'meio meio meio'
+    'baixo baixo baixo';
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img-dino/floresta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+}
+.chao{
+    width: 900px;
+    height: 1000px;
+    position: relative;
+    display: grid;
+    grid-area: baixo;
+    background-image: url(img-dino/chaofase1.gif);
+    background-position: 0 -20px;
+}
+.dino{
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 30px; 
+    background-image: url(img-dino/Adalberto.gif);
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+.dinobaixo {
+    width: 100px;
+    height: 80px;   
+    position: absolute;
+    background-image: url(img-dino/Adalberto.gif);
+    bottom: 0;
+    left: 30px;
+}
+.pulo{
+    background-image: url(img-dino/AdalbertoPulo.gif);
+    animation: jump 700ms ease-out;
+}
+
+.cactus{
+    background-image: url(img-dino/abelhasadalba.gif);
+    position: absolute;
+    width: 50px;    
+    height: 50px;
+    bottom: 17px;
+    animation: cacto 2s infinite linear;
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animacao 1.5s infinite linear;
+   }
+ @keyframes pipe-animacao{
+    from{
+     right:-80px;
+    }
+    
+    to{
+     right: 100%;
+    }
+  }
+  @keyframes jump{
+    0%{bottom: 0}
+    50%{bottom: 180px;}
+     60%{bottom: 180px;}
+     70%{bottom: 180px;}
+     75%{bottom: 180px;}
+     80%{bottom: 180px;}
+    100%{bottom: 0; }
+}
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animacao 1.5s infinite linear;
+    
+   }
+   
+   @keyframes pipe-animacao{
+     from{
+      right:-80px;
+     }
+     
+     to{
+      right: 100%;
+     }
+   }
+   
+   .mario{
+   width: 150px;
+   position: absolute;
+   bottom: 0;
+   }
+   
+  
