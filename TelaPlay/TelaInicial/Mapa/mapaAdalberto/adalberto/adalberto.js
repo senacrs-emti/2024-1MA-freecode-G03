@@ -44,3 +44,14 @@ document.addEventListener("keydown", (e) => {
 	}
 	
 });
+
+var timer, sound;
+sound = new Howl({
+    src: ['MusicaJogo.mp3.'],
+    autoplay: true,
+    loop: false,
+    volume: 1,
+});
+setTimeout(function(){
+    sound.play();
+    },100);
