@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');                                                        
 
+body{
+    overflow: hidden;
+}
 .btn {
     display: flex;
     justify-content: center;
@@ -151,35 +154,25 @@ div{
     position:relative;
     left: 380px;
     bottom: 218px;
+    display: block;
 }
 #Brenda{
     position:relative;
     left: 760px;
     bottom: 437px;
-
-}
-#Bruno{
-    position: relative;
-    bottom: 430px;
-
-
-}
-#Barbara{
-    position: relative;
-    left: 380px;
-    bottom: 650px;
+    display: block;
 }
 #Willian{
     position: relative;
     left: 760px;
     bottom: 870px;
-}
-#Gaules{
-    position: relative;
-    bottom: 860px;  
+    display: block;
+    margin-top: 450px;
 }
 #Sandro{
     position: relative;
-    left: 380px;
+    left: 3px;
     bottom: 1080px; 
+    display: block;
+    margin-top: 20px;
 }
