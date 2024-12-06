@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
+let isGameOver = false;
 function jump() {
   mario.classList.add('pulo');
 
@@ -28,7 +29,12 @@ const loop = setInterval(()=>{
 
      mario.style.width = '160px'
      mario.style.marginLeft = '0px'
+     isGameOver = true
      
+
+     if (isGameOver = true){
+      window.location.href = "GameOver/GameOver.html"
+     }
      clearInterval(loop);
     
    }
